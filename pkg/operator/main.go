@@ -167,7 +167,7 @@ func main() {
 
 	// initialize the DynamicStandbyReconciler controller
 	if err = controllers.NewDynamicStandbyReconciler(mgr).SetupWithManager(mgr); err != nil {
-		setupLog.Error(err, "unaable to create controller", "controller", "DynamicStandby")
+		setupLog.Error(err, "unable to create controller", "controller", "DynamicStandby")
 		os.Exit(1)
 	}
 
